@@ -69,7 +69,7 @@ def run_scraper(scraper_name, scraper_url):
 if __name__ == '__main__':
     # load up list of URL's
     # format the list of URL's as: company name;URL
-    with open('/Users/BrandonHall/Documents/GitHub/SUMDScrapeAndAnalysis'
+    with open('/Users/BrandonHall/Documents/GitHub/SUMD_Scrape_And_Analysis'
               '/NewDC_DataScraping/DC_Scrape_Files/urls.txt', 'r') as f:
         reader = csv.reader(f, delimiter=';')
         urls = list(reader)
