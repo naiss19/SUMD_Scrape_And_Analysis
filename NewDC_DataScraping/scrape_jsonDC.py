@@ -7,7 +7,6 @@ import csv
 import os
 import math
 import multiprocessing as mp
-import re
 import urllib.request as urllib2
 
 
@@ -39,7 +38,6 @@ class scraper:
         wdata = json.loads(wjson.decode('utf-8'))
         ndata = str(wdata)
         match = ndata.count('}, {')
-        length = re.sub('}, {', '},\n{', ndata)
         print('Scraping complete at: ' + datetime.datetime.now().strftime('%m/%d/%Y-%H:%M:%S'))
         fn = datetime.datetime.now().strftime('{}_%m%d%Y-%H%M%S.csv'.format(self.name))
         with open(os.path.join(directory, fn), 'w') as cf:
@@ -75,7 +73,7 @@ if __name__ == '__main__':
         urls = list(reader)
 # initialize data directory at ./data if directory is not already found
     if 'New_DC_Data' not in os.listdir('./'):
-        os.mkdir('./New_DC_Data')
+        print('Make a folder named "New_DC_Data"')
 
     p = mp.Pool(len(urls))
     p.starmap(run_scraper, urls)
