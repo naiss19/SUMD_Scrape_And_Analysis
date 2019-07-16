@@ -1,0 +1,4 @@
+lime;https://lime.bike/api/partners/v1/gbfs/free_bike_status.json
+bird;https://gbfs.bird.co/dc
+lyft;https://s3.amazonaws.com/lyft-lastmile-production-iad/lbs/dca/free_bike_status.json
+jump;https://dc.jumpmobility.com/opendata/free_bike_status.json

@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"name": "SUMDScrapeAndAnalysis",
+			"path": "."
+		},
+		{
+			"name": "Python",
+			"path": "/Users/brandon/Documents/Python"
+		},
+		{
+			"name": "v6",
+			"path": "/Users/brandon/Documents/Python/DC_DataCSV/v6"
+		},
+		{
+			"name": "sharedstreets-python",
+			"path": "/Users/brandon/Documents/GitHub/sharedstreets-python"
+		},
+		{
+			"name": "v5",
+			"path": "/Users/brandon/Documents/Python/DC_DataCSV/v5"
+		}
+	],
+	"settings": {}
+}
